@@ -1,0 +1,32 @@
+
+
+<ion-content class="ion-padding">
+  
+  <div *ngIf="isFirstTimeLoggedIn">
+
+    <div class="ion-padding"  style="padding-top: 10%; font-weight: bold;">
+      <h1>
+        Lastly connect with Facebook
+      </h1>
+    </div>
+   
+    <div class="ion-padding" style="padding-top: 10%; font-weight: bold;" *ngIf="isFirstTimeLoggedIn" >
+      <h5>
+        Create an account via Facebook to sign in.
+      </h5>
+    </div>
+  </div>
+
+    <div *ngIf="!isFirstTimeLoggedIn">
+      <div class="ion-padding"  style="padding-top: 10%; font-weight: bold;">
+        <h1>
+          Sign back in to help or get help!
+        </h1>
+      </div>
+    </div>
+    <div style="margin-top: 10%;"  (click)="authenticateFb()">
+    <!-- <div style="margin-top: 10%;"  (click)="home()"> -->
+      <img  src="./../../../../assets/images/facebook_auth.png" />
+    </div>
+
+</ion-content>

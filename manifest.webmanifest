@@ -1,0 +1,9 @@
+{
+    "name": "StayAtHome",
+    "short_name": "StayAtHome",
+    "theme_color": "#1976d2",
+    "background_color": "#fafafa",
+    "display": "standalone",
+    "scope": "https://stayathome-8bcd5.web.app/",
+    "start_url": "https://stayathome-8bcd5.web.app/"
+}

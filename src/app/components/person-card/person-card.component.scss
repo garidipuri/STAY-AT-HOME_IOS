@@ -1,0 +1,17 @@
+ion-avatar{
+    float: right!important;
+    width:60% !important;  
+    height : 60% !important;  
+    max-width: 100px !important;  //any size
+    max-height: 100px !important;
+}
+
+ion-card{
+    border-radius: 30px;
+}
+
+ion-button.person-card-button{
+    height: 55px; 
+    width: 100%!important;
+    --border-radius: 20px;
+}

@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar color="sah-primary">
+    <ion-title>messages</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-list *ngFor="let person of persons">
+    <ion-item (click)="conversation(person)">
+      <ion-avatar slot="start">
+        <img src="{{person.profilePicture}}">
+      </ion-avatar>
+      <ion-label>
+
+        <!-- <h2>Finn</h2> -->
+        <h5 style="float: right;">{{person.timestamp | date:'short'}}</h5>
+        <h3 style="font-weight: bold;">{{person.userName}}</h3> 
+        <p class="sah-primary">{{person.lastMessage}}</p>
+
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>

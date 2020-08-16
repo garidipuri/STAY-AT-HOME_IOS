@@ -1,0 +1,12 @@
+
+<div #map id="map" ></div>
+
+<ion-item-divider></ion-item-divider>
+
+<ion-list>
+    <ion-item color="sah-secondary">
+        <ion-icon name="pin" slot="start"></ion-icon>
+        <ion-textarea placeholder = "pin the location" value={{address}}></ion-textarea>
+    </ion-item>
+    <ion-button expand="block" color="sah-primary" (click)="updateLocation()">Continue</ion-button>
+</ion-list>

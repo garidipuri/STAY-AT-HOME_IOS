@@ -1,0 +1,24 @@
+<ion-content class="ion-padding"  style="padding-top: 5%; font-weight: bold;">
+
+  <div class="ion-padding">
+    <h1>
+      Help with what?
+    </h1>
+  </div>
+
+  <div *ngIf="isPeople" class="ion-padding" style="padding-top: 5%; font-weight: bold;">
+    <h5>
+      Please let people know what you need help with. Choose one or more.
+    </h5>
+  </div>
+  <div *ngIf="!isPeople" class="ion-padding" style="padding-top: 5%; font-weight: bold;">
+    <h5>
+      Please let people know what you can help with. Choose one or more.
+    </h5>
+  </div>
+  <app-help-items></app-help-items>
+  <div style="float: right; padding-top: 10%;">
+    <ion-button shape="round" color="sah-secondary button-text" (click)="onboarding2()" >Next</ion-button>
+  </div>
+
+</ion-content>

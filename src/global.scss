@@ -1,0 +1,95 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "~@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+@import '~@ionic/angular/css/display.css';
+
+/* Optional CSS utils that can be commented out */
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+
+
+:root {
+  --ion-color-sah-primary: #6CA3E3;
+  --ion-color-sah-primary-rgb: 108,163,227;
+  --ion-color-sah-primary-contrast: #ffffff;
+  --ion-color-sah-primary-contrast-rgb: 255,255,255;
+  --ion-color-sah-primary-shade: #5f8fc8;
+  --ion-color-sah-primary-tint: #7bace6;
+}
+
+.ion-color-sah-primary {
+  --ion-color-base: var(--ion-color-sah-primary);
+  --ion-color-base-rgb: var(--ion-color-sah-primary-rgb);
+  --ion-color-contrast: var(--ion-color-sah-primary-contrast);
+  --ion-color-contrast-rgb: var(--ion-color-sah-primary-contrast-rgb);
+  --ion-color-shade: var(--ion-color-sah-primary-shade);
+  --ion-color-tint: var(--ion-color-sah-primary-tint);
+}
+
+:root {
+  --ion-color-sah-secondary: #ffffff;
+  --ion-color-sah-secondary-rgb: 255,255,255;
+  --ion-color-sah-secondary-contrast: #6CA3E3;
+  --ion-color-sah-secondary-contrast-rgb: 108,163,227;
+  --ion-color-sah-secondary-shade: #e0e0e0;
+  --ion-color-sah-secondary-tint: #ffffff;
+}
+
+.ion-color-sah-secondary {
+  --ion-color-base: var(--ion-color-sah-secondary);
+  --ion-color-base-rgb: var(--ion-color-sah-secondary-rgb);
+  --ion-color-contrast: var(--ion-color-sah-secondary-contrast);
+  --ion-color-contrast-rgb: var(--ion-color-sah-secondary-contrast-rgb);
+  --ion-color-shade: var(--ion-color-sah-secondary-shade);
+  --ion-color-tint: var(--ion-color-sah-secondary-tint);
+}
+
+:root {
+  --ion-color-sah-card: #8CC0FB;
+  --ion-color-sah-card-rgb: 140,192,251;
+  --ion-color-sah-card-contrast: #ffffff;
+  --ion-color-sah-card-contrast-rgb: 255,255,255;
+  --ion-color-sah-card-shade: #7ba9dd;
+  --ion-color-sah-card-tint: #98c6fb;
+}
+
+.ion-color-sah-card {
+  --ion-color-base: var(--ion-color-sah-card);
+  --ion-color-base-rgb: var(--ion-color-sah-card-rgb);
+  --ion-color-contrast: var(--ion-color-sah-card-contrast);
+  --ion-color-contrast-rgb: var(--ion-color-sah-card-contrast-rgb);
+  --ion-color-shade: var(--ion-color-sah-card-shade);
+  --ion-color-tint: var(--ion-color-sah-card-tint);
+}
+
+
+.button-text{
+  font-weight: bold;
+  
+}
+
+ion-button{
+  --box-shadow: 0px 5px 5px rgba(122, 181, 236, 0.59);
+}
+
+ion-item-divider{
+  background-color: #F4F7FF!important;
+}

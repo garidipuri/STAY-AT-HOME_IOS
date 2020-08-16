@@ -1,0 +1,25 @@
+<ion-tabs >
+  <ion-tab-bar slot="bottom">
+
+    <ion-tab-button *ngIf="isPeople" tab="people"> 
+      <ion-icon name="people" style="color: #6CA3E3;"></ion-icon>
+      <ion-label class="footer-text-semibold">People</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button  *ngIf="!isPeople" tab="volunteer">
+      <ion-icon name="people" style="color: #6CA3E3;" ></ion-icon>
+      <ion-label class="footer-text-semibold">Volunteers</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="messages">
+     <ion-icon name="chatbox-ellipses" style="color: #6CA3E3;" ></ion-icon>
+      <ion-label class="footer-text-semibold">Messages</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="settings">
+    <ion-icon name="settings" style="color: #6CA3E3;"></ion-icon>
+      <ion-label class="footer-text-semibold">Settings</ion-label>
+    </ion-tab-button>
+  </ion-tab-bar>
+
+</ion-tabs>

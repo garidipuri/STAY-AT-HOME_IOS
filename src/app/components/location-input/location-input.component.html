@@ -1,0 +1,22 @@
+<!-- <ion-button expand="block" color="sah-secondary">
+  <ion-item color="sah-secondary">
+    <ion-icon name="pin" slot="start"></ion-icon>
+    <ion-input  (click)="showAddressModal()" [(ngModel)]="address.place"type="text" placeholder="Pick address manually"></ion-input>
+  </ion-item>
+</ion-button> -->
+
+<!-- <ion-header> -->
+  <!-- <ion-toolbar color="primary"> -->
+  <ion-searchbar [(ngModel)]="autocomplete.input" (ionInput)="updateSearchResults()" placeholder="Search for a Location"></ion-searchbar>
+  <!-- </ion-toolbar> -->
+  <ion-list [hidden]="autocompleteItems.length == 0">
+    <ion-item color="sah-secondary" *ngFor="let item of autocompleteItems" tappable (click)="selectSearchResult(item)">
+      {{ item.description }}
+    </ion-item>
+  </ion-list>
+<!-- </ion-header> -->
+
+<!-- <ion-content>  -->
+    <!-- <ion-button (click)="GoTo()" >Go To Selected Location</ion-button> -->
+<!-- </ion-content> -->
+
